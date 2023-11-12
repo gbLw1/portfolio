@@ -1,0 +1,645 @@
+/* Minha paleta de cores : https://prnt.sc/12wbj1k */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+
+/*
+// ====================================================== 
+// CONTEÚDO GERAL
+// ======================================================
+*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+  ::-webkit-scrollbar-thumb {
+    background: #111;
+ }
+
+  ::-webkit-scrollbar-track {
+    background: #505050;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #242424;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloco {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bloco div {
+    flex: 1 1 370px;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    display: inline!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+    transition: .3s;
+}
+
+/*
+// ====================================================== 
+// HEADER → LOGO / MENU
+// ======================================================
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(
+        90deg, 
+      rgb(51, 51, 51) 0%, 
+      rgb(36, 36, 36) 100%);
+    width: 100%;
+    padding: 15px;
+    height: 70px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-family: 'Bebas Neue', 'Poppins', Arial;
+    font-size: 2em;
+    text-shadow: 3px 3px 10px black;
+    color: #fff;
+    letter-spacing: .05em;
+}
+
+.hamburguer {
+    z-index: 9999;
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hamburguer i {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin-left: 10px;
+}
+
+ul li a {
+    display: block;
+    color: #f8eadc;
+    padding: 10px 15px;
+    border-radius: 7px 0 7px 0;
+}
+
+ul li a:hover {
+    transition: .6s ease;
+    color: #242424;
+    background-color: #efdfcc;
+    box-shadow: 3px 3px 5px #161616;
+}
+
+ul li a:active {
+    transform: scale(.7);
+}
+
+/*
+// ====================================================== 
+// LAYOUT : RESPONSIVO
+// ======================================================
+*/
+
+@media screen and (max-width: 756px) {
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    .menu {
+        display: none;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .menu.ativo {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 40%;
+        background: linear-gradient(
+            to right, 
+          rgb(40, 40, 40, 80%), 
+          rgb(36, 36, 36, 80%));
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu li a {
+        color: #f8eadc;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .menu li a:hover {
+        transition: none;
+        box-shadow: none;
+    }
+
+    .menu li a:active {
+        transform: none;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    .responsive-hobbies {
+        width: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center!important;
+    }
+
+    .titulo-home {
+        font-size: 3.7em!important;
+    }
+
+    .light {
+        font-size: 1.2em!important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .foto-hobbies {
+        padding: 0!important;
+    }
+
+    .titulo-home {
+        font-size: 2.5em!important;
+    }
+}
+
+/*
+// ====================================================== 
+// SECTION → HOME
+// ======================================================
+*/
+
+.bg-home {
+    background: linear-gradient(
+        -45deg, 
+        #e7d3fc 0%, 
+        #dddddd 70%);
+    border-bottom: 1px solid #cccccc;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coluna {
+    flex-direction: column;
+}
+
+.titulo-home {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    font-size: 4em;
+    text-align: center;
+}
+
+.light {
+    font-size: 1.4em;
+    font-weight: 200;
+    text-indent: 0;
+}
+
+.bg-home a {
+    color: inherit;
+    text-align: center;
+}
+
+.bg-home a:hover {
+    transform: scale(1.2);
+}
+
+.bg-home a:active {
+    transform: scale(0.5);
+}
+
+.flecha {
+    font-size: 3.5em!important;
+}
+
+/*
+// ====================================================== 
+// SECTION → SOBRE
+// ======================================================
+*/
+
+.bg-sobre {
+    background: linear-gradient(
+        135deg, 
+        rgba(138, 138, 138, .3) 0%, 
+        rgb(241, 224, 205) 50%);
+    border-bottom: 1px solid #cccccc;
+}
+
+.foto-sobre {
+    margin: 50px;
+    background: linear-gradient(
+        -45deg, 
+      rgba(87, 87, 87, 0.5), 
+      rgba(51, 51, 51, 0.5));
+    border-radius: 0 50px 0 50px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+// ====================================================== 
+// SECTION → HOBBIES
+// ======================================================
+*/
+
+.bg-hobbies {
+    background: linear-gradient(
+        -45deg,
+       rgba(201, 187, 216, 0.5) 20%, 
+       rgba(251,236,163, 0.7) 100%);
+    border-bottom: 1px solid #cccccc;
+}
+
+.foto-hobbies {
+    margin: 50px;
+    padding: 50px;
+    background: linear-gradient(
+        to right,
+      rgba(201, 187, 216, 0.3) -30%,
+      rgba(219, 206, 142, 0.4) 130%);
+    border-radius: 50px 0 50px 0;
+}
+
+/*
+// ====================================================== 
+// SECTION → FATEC
+// ======================================================
+*/
+
+.bg-fatec {
+    background: linear-gradient(
+        45deg, 
+        rgb(241, 224, 205) 0%, 
+        rgba(227, 210, 244, .6) 100%);
+    border-bottom: 1px solid #cccccc;
+}
+
+.logo-fatec {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.localizacao-fatec {
+    padding: 10px 10px 4px 10px;
+    border-radius: 0 20px 0 20px;
+    background-color: rgba(212, 201, 189, 0.2);
+}
+
+.iframe-mapa-fatec {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 0 20px 0 20px;
+}
+
+/*
+// ====================================================== 
+// SECTION → LINKS & CONTATO
+// ======================================================
+*/
+
+.bg-contato {
+    min-height: 100%!important;
+    background: linear-gradient(
+        135deg,
+      rgb(251 236 163) -80%,
+      rgb(51 51 51) 100%);
+    color: #F8EADC;
+}
+
+/* ======================== LINKS ======================= */
+
+.links h2 {
+    color: #fff;
+}
+
+.links a {
+    color: #fff;
+    font-size: 2.5em;
+    border-radius: 50%;
+    padding: 8px 20px;
+}
+
+/* ==================== FORM CONTATO ===================== */
+
+.form {
+    padding: 20px 20px;
+    margin-top: 30px;
+    background: linear-gradient(
+        to right,
+      rgba(75, 75, 75, 0.3) -30%,
+      rgba(240, 229, 178, 0.3) 130%);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    outline: none;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control textarea {
+    outline: none;
+    resize: none;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.success textarea {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #ff0000;
+}
+
+.form-control.error textarea {
+    border-color: #ff0000;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #ff0000;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    color: #ffa097;
+    visibility: visible;
+}
+
+.form button {
+    border: 2px solid #333333;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.form button:hover {
+    border-color: #fff;
+}
+
+.form button:active {
+    transform: scale(.98);
+}
+
+.form .msg-contato {
+    letter-spacing: 1px;
+    display: none;
+    color: #00ff6b;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*
+// ====================================================== 
+// SECTION → FOOTER
+// ======================================================
+*/
+
+footer {
+    height: 70px;
+}
+
+.bg-footer {
+    background: #111111;
+}
+
+.rodape {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+
+
+
+
+
+
+/*
+// ====================================================== 
+// PÁGINA → PROJETOS
+// ======================================================
+*/
+
+.bg-projetos {
+    padding: 0;
+    background: linear-gradient(
+        to left,
+      #a58eeb -40%,
+      #333333 100%);
+    color: #fff;
+    min-height: calc(100vh - 70px)!important;
+}
+
+.foto-projeto {
+    padding: 10px 15px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-projetos {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.ul-projetos li {
+    margin: 0;
+}
+
+.ul-projetos li a {
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background-color: #242424;
+    color: #fff;
+}
+
+.ul-projetos li a:hover {
+    box-shadow: none;
+    background-color: #dbdbdb;
+}
+
+.github a {
+    color: #f8eadc;
+    font-size: 4em;
+    border-radius: 50px;
+    padding: 0 16px ;
+}

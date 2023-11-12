@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>gbL - Chatbot</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background: linear-gradient(
+                to left,
+            #a58eeb -90%,
+            #333333 130%);
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="NerdStore"
+        agent-id="531d0cf9-364b-4998-a4ac-4927fb211850"
+        language-code="pt-br">
+    </df-messenger>
+
+</body>
+</html>
