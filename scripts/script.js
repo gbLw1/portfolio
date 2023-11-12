@@ -1,9 +1,9 @@
 // ======================================================
 // MENU
 // ======================================================
-const hamburguer = document.getElementById('hamburguer');
-const menu = document.getElementById('menu');
+const hamburguer = document.getElementById("hamburguer");
+const menu = document.getElementById("menu");
 
-hamburguer.addEventListener('click', () => {
-    menu.classList.toggle('ativo');
+hamburguer.addEventListener("click", () => {
+  menu.classList.toggle("ativo");
 });
