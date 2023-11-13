@@ -36,7 +36,10 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  color: #242424;
+  /* color: #242424; */
+  /* background: #d0c1ff; */
+  background: linear-gradient(to left, #a58eeb -40%, #333333 100%);
+  color: #eaeaea;
 }
 
 .container {
@@ -47,7 +50,7 @@ body {
   flex-wrap: wrap;
 }
 
-.bloco {
+.block {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -56,7 +59,7 @@ body {
   align-items: center;
 }
 
-.bloco div {
+.block div {
   flex: 1 1 370px;
 }
 
@@ -97,6 +100,10 @@ a {
   border: none;
   text-decoration: none;
   transition: 0.3s;
+}
+
+.hr {
+  border-bottom: 1px solid #333;
 }
 
 /*
@@ -281,17 +288,14 @@ ul li a:active {
 // ======================================================
 */
 
-.bg-home {
-  background: linear-gradient(-45deg, #e7d3fc 0%, #dddddd 70%);
-  border-bottom: 1px solid #cccccc;
-
+.home {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.coluna {
+.col {
   flex-direction: column;
 }
 
@@ -323,6 +327,7 @@ ul li a:active {
 
 .flecha {
   font-size: 3.5em !important;
+  color: #242424;
 }
 
 /*
@@ -330,15 +335,6 @@ ul li a:active {
 // SECTION → SOBRE
 // ======================================================
 */
-
-.bg-sobre {
-  background: linear-gradient(
-    135deg,
-    rgba(138, 138, 138, 0.3) 0%,
-    rgb(241, 224, 205) 50%
-  );
-  border-bottom: 1px solid #cccccc;
-}
 
 .foto-sobre {
   margin: 50px;
@@ -363,15 +359,6 @@ ul li a:active {
 // ======================================================
 */
 
-.bg-hobbies {
-  background: linear-gradient(
-    -45deg,
-    rgba(201, 187, 216, 0.5) 20%,
-    rgba(251, 236, 163, 0.7) 100%
-  );
-  border-bottom: 1px solid #cccccc;
-}
-
 .foto-hobbies {
   margin: 50px;
   padding: 50px;
@@ -389,150 +376,13 @@ ul li a:active {
 // ======================================================
 */
 
-.bg-contato {
-  min-height: 100% !important;
-  background: linear-gradient(
-    135deg,
-    rgb(251 236 163) -80%,
-    rgb(51 51 51) 100%
-  );
-  color: #f8eadc;
-}
-
 /* ======================== LINKS ======================= */
 
-.links h2 {
-  color: #fff;
-}
-
 .links a {
-  color: #fff;
   font-size: 2.5em;
+  background-color: #242424;
   border-radius: 50%;
   padding: 8px 20px;
-}
-
-/* ==================== FORM CONTATO ===================== */
-
-.form {
-  padding: 20px 20px;
-  margin-top: 30px;
-  background: linear-gradient(
-    to right,
-    rgba(75, 75, 75, 0.3) -30%,
-    rgba(240, 229, 178, 0.3) 130%
-  );
-  border-radius: 5px 5px 5px 5px;
-}
-
-.form-control {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.form-control input {
-  outline: none;
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 10px;
-  width: 100%;
-}
-
-.form-control textarea {
-  outline: none;
-  resize: none;
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 10px;
-  width: 100%;
-  height: 120px;
-}
-
-.form-control.success input {
-  border-color: #2ecc71;
-}
-
-.form-control.success textarea {
-  border-color: #2ecc71;
-}
-
-.form-control.error input {
-  border-color: #ff0000;
-}
-
-.form-control.error textarea {
-  border-color: #ff0000;
-}
-
-.form-control i {
-  visibility: hidden;
-  position: absolute;
-  top: 45px;
-  right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-  color: #2ecc71;
-  visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-  color: #ff0000;
-  visibility: visible;
-}
-
-.form-control small {
-  visibility: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.form-control.error small {
-  color: #ffa097;
-  visibility: visible;
-}
-
-.form button {
-  border: 2px solid #333333;
-  border-radius: 4px;
-  background-color: #333333;
-  color: #fff;
-  display: block;
-  font-family: inherit;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-  outline: none;
-}
-
-.form button:hover {
-  border-color: #fff;
-}
-
-.form button:active {
-  transform: scale(0.98);
-}
-
-.form .msg-contato {
-  letter-spacing: 1px;
-  display: none;
-  color: #00ff6b;
-  font-weight: bold;
-  font-size: 22px;
 }
 
 /*
@@ -568,12 +418,6 @@ span {
 // PÁGINA → PROJETOS
 // ======================================================
 */
-
-.bg-projetos {
-  padding: 0;
-  background: linear-gradient(to left, #a58eeb -40%, #333333 100%);
-  color: #fff;
-}
 
 .foto-projeto {
   padding: 10px 15px;
