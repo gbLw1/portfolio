@@ -465,3 +465,13 @@ span {
   border-radius: 50px;
   padding: 0 16px;
 }
+
+.link {
+  color: #92c4e7;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.error {
+  color: #ffa700;
+}
