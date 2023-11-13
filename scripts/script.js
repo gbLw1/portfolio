@@ -35,7 +35,10 @@ function FetchGitHubRepos() {
 
   fetch("https://api.github.com/users/gblw1/repos")
     .then((response) => response.json())
-    .then((data) => LoadGitHubProjects(data))
+    .then((data) => {
+      data.sort((a, b) => b.stargazers_count - a.stargazers_count);
+      LoadGitHubProjects(data);
+    })
     .catch(() => GenerateErrorResponse())
     .finally(() => {
       setLoading(false);
