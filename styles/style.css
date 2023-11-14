@@ -16,10 +16,12 @@
 
 ::-webkit-scrollbar-thumb {
   background: #111;
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
   background: #505050;
+  border-radius: 50px;
 }
 
 html {
@@ -216,19 +218,13 @@ ul li a:active {
 
   .menu li {
     margin: 0;
-    padding: 10px 0;
     width: 100%;
     text-align: center;
-    /* border-top: 1px solid black; */
-  }
-
-  .menu li:last-child {
-    /* border-bottom: 1px solid black; */
   }
 
   .menu li a {
     color: #eaeaea;
-    padding: 15px 15px;
+    padding: 25px;
     border: none;
     border-radius: 0;
   }
@@ -430,12 +426,14 @@ span {
 }
 
 .ul-projetos li a {
+  display: block;
   border-bottom: 1px solid black;
-  border-radius: 15px 0;
+  border-radius: 20px 0;
   background-color: #242424;
   color: #fff;
   margin-bottom: 8px;
   font-size: 0.8rem;
+  padding: 10px 15px;
 }
 
 .ul-projetos li a:hover {
