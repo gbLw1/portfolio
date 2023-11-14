@@ -167,16 +167,17 @@ ul li {
 
 ul li a {
   display: block;
-  color: #f8eadc;
-  padding: 10px 15px;
-  border-radius: 7px 0 7px 0;
+  color: #eaeaea;
+  padding: 5px 10px;
+  border-radius: 14px 0;
 }
 
 ul li a:hover {
-  transition: 0.3s ease;
+  transition: 0.1s ease;
+  scale: 1.25;
+  background: #eaeaea;
   color: #242424;
-  background-color: #efdfcc;
-  box-shadow: 3px 3px 5px #161616;
+  box-shadow: 0 0 5px 3px #aaaaaa66;
 }
 
 ul li a:active {
@@ -207,12 +208,10 @@ ul li a:active {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 40%;
-    background: linear-gradient(
-      to right,
-      rgb(40, 40, 40, 80%),
-      rgb(36, 36, 36, 80%)
-    );
+    width: 60%;
+    background: rgb(40, 40, 40, 97%);
+    box-shadow: 15px 0 50px 15px #111;
+    z-index: 999;
   }
 
   .menu li {
@@ -220,10 +219,15 @@ ul li a:active {
     padding: 10px 0;
     width: 100%;
     text-align: center;
+    /* border-top: 1px solid black; */
+  }
+
+  .menu li:last-child {
+    /* border-bottom: 1px solid black; */
   }
 
   .menu li a {
-    color: #f8eadc;
+    color: #eaeaea;
     padding: 15px 15px;
     border: none;
     border-radius: 0;
@@ -310,10 +314,20 @@ ul li a:active {
   color: #242424;
 }
 
+/*
+// ====================================================== 
+// SECTION → SOBRE MIM
+// ======================================================
+*/
+
 .foto-sobre {
   margin: 50px;
   border-radius: 0 50px 0 50px;
   overflow: hidden;
+}
+
+.programmer {
+  scale: 1.1;
 }
 
 /*
@@ -326,14 +340,34 @@ ul li a:active {
   text-align: center;
 }
 
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .links-contato {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
   font-size: 2em;
   background-color: #242424;
   color: #eaeaea;
   border-radius: 50%;
   padding: 8px 20px;
   margin-right: 10px;
+}
+
+.links-contato:hover {
+  box-shadow: 0 0 5px 3px rgb(0 0 0 / 50%);
+  scale: 1.5;
+  transition: 0.1s ease;
+  background: #eaeaea;
+  color: #242424;
+  font-size: 3.5rem;
 }
 
 .links-contato:last-child {
@@ -407,13 +441,6 @@ span {
   box-shadow: none;
   background-color: #dbdbdb;
   scale: 1.05;
-}
-
-.github a {
-  color: #f8eadc;
-  font-size: 4em;
-  border-radius: 50px;
-  padding: 0 16px;
 }
 
 .link {

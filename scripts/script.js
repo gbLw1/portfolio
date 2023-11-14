@@ -8,6 +8,18 @@ hamburguer.addEventListener("click", () => {
   menu.classList.toggle("ativo");
 });
 
+function RemoveActiveMenuClass() {
+  menu.classList.remove("ativo");
+}
+
+document.querySelector("main").addEventListener("click", RemoveActiveMenuClass);
+
+function SetMenuItensClickListener() {
+  menu.childNodes.forEach((i) =>
+    i.addEventListener("click", RemoveActiveMenuClass),
+  );
+}
+
 // ======================================================
 // FETCH - Projetos
 // ======================================================
@@ -17,6 +29,7 @@ const ulProjetos = document.querySelector(".ul-projetos");
 function setLoading(state) {
   const p = document.createElement("p");
   p.id = "loading";
+  p.style.textAlign = "center";
   p.innerHTML = "Carregando...";
 
   if (state) {
@@ -40,31 +53,7 @@ function FetchGitHubRepos() {
       LoadGitHubProjects(data);
     })
     .catch(() => GenerateErrorResponse())
-    .finally(() => {
-      setLoading(false);
-
-      const p = document.createElement("p");
-      const ul = document.createElement("ul");
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      const i = document.createElement("i");
-
-      li.className = "github";
-
-      a.href = "https://github.com/gblw1";
-      a.target = "_blank";
-      a.title = "GitHub";
-
-      i.className = "fab fa-github";
-
-      p.innerHTML = "Me siga no GitHub para ver projetos futuros.";
-      divProjetos.appendChild(p);
-
-      a.appendChild(i);
-      li.appendChild(a);
-      ul.appendChild(li);
-      divProjetos.appendChild(ul);
-    });
+    .finally(() => setLoading(false));
 }
 
 function LoadGitHubProjects(repos) {
@@ -110,4 +99,12 @@ function GenerateErrorResponse() {
   ulProjetos.appendChild(p);
 }
 
-FetchGitHubRepos();
+// ======================================================
+// Initialize - on load functions
+// ======================================================
+function Initialize() {
+  SetMenuItensClickListener();
+  FetchGitHubRepos();
+}
+
+Initialize();
