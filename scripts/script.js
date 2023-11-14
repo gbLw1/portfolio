@@ -103,12 +103,13 @@ function GenerateErrorResponse() {
 // ANIMATIONS - Background
 // ======================================================
 const points = [
-  { r: 235, g: 142, b: 142 },
-  { r: 235, g: 142, b: 235 },
-  { r: 142, g: 142, b: 235 },
-  { r: 142, g: 235, b: 235 },
-  { r: 142, g: 235, b: 142 },
-  { r: 235, g: 235, b: 142 },
+  { r: 235, g: 142, b: 142 }, // incrementar B
+  { r: 235, g: 142, b: 235 }, // decrementar R
+  { r: 142, g: 142, b: 235 }, // incrementar G
+  { r: 142, g: 235, b: 235 }, // decrementar B
+  { r: 142, g: 235, b: 142 }, // incrementar R
+  { r: 235, g: 235, b: 142 }, // decrementar G
+  // percorre o array novamente
 ];
 
 let currentIndex = 0;
