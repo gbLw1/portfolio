@@ -148,7 +148,9 @@ function Initialize() {
   FetchGitHubRepos();
 
   ChangeBackground();
-  const interval = setInterval(ChangeBackground, 50);
 }
+
+// permite você parar a animação com clearInterval(interval)
+const interval = setInterval(ChangeBackground, 50);
 
 Initialize();

@@ -323,15 +323,17 @@ nav {
   scale: 1.1;
 }
 
+.internal-link {
+  color: #eaeaea;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 /*
 // ====================================================== 
 // SECTION → LINKS & CONTATO
 // ======================================================
 */
-
-.links {
-  text-align: center;
-}
 
 .links-container {
   display: flex;
