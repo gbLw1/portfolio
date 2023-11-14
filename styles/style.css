@@ -42,6 +42,7 @@ body {
   /* background: #d0c1ff; */
   background: linear-gradient(to left, #a58eeb -40%, #333333 100%);
   color: #eaeaea;
+  transition: background 0.5s ease-in-out;
 }
 
 .container {

@@ -100,11 +100,54 @@ function GenerateErrorResponse() {
 }
 
 // ======================================================
+// ANIMATIONS - Background
+// ======================================================
+const points = [
+  { r: 235, g: 142, b: 142 },
+  { r: 235, g: 142, b: 235 },
+  { r: 142, g: 142, b: 235 },
+  { r: 142, g: 235, b: 235 },
+  { r: 142, g: 235, b: 142 },
+  { r: 235, g: 235, b: 142 },
+];
+
+let currentIndex = 0;
+let currentColor = { ...points[currentIndex] };
+
+function ChangeBackground() {
+  const nextIndex = (currentIndex + 1) % points.length; // output: 0, 1, 2, 3, 4, 5, 0, 1, 2, 3...
+  const nextColor = { ...points[nextIndex] };
+
+  document.body.style.background = `linear-gradient(to left, rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b}) -40%, #333 100%)`;
+
+  if (currentColor.b < nextColor.b) {
+    currentColor.b++;
+  } else if (currentColor.r > nextColor.r) {
+    currentColor.r--;
+  } else if (currentColor.g < nextColor.g) {
+    currentColor.g++;
+  } else if (currentColor.b > nextColor.b) {
+    currentColor.b--;
+  } else if (currentColor.r < nextColor.r) {
+    currentColor.r++;
+  } else if (currentColor.g > nextColor.g) {
+    currentColor.g--;
+  } else {
+    // Reinicia a transição quando atinge a última cor
+    currentIndex = nextIndex;
+  }
+}
+
+// ======================================================
 // Initialize - on load functions
 // ======================================================
 function Initialize() {
   SetMenuItensClickListener();
+
   FetchGitHubRepos();
+
+  ChangeBackground();
+  const interval = setInterval(ChangeBackground, 50);
 }
 
 Initialize();
