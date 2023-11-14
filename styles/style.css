@@ -156,25 +156,25 @@ nav {
   font-size: 1.5em;
 }
 
-ul {
+.menu {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-ul li {
+.menu li {
   margin-left: 10px;
 }
 
-ul li a {
+.menu li a {
   display: block;
   color: #eaeaea;
   padding: 5px 10px;
   border-radius: 14px 0;
 }
 
-ul li a:hover {
+.menu li a:hover {
   transition: 0.1s ease;
   scale: 1.25;
   background: #eaeaea;
@@ -182,7 +182,7 @@ ul li a:hover {
   box-shadow: 0 0 5px 3px #aaaaaa66;
 }
 
-ul li a:active {
+.menu li a:active {
   transform: scale(0.9);
 }
 
@@ -226,7 +226,7 @@ ul li a:active {
     color: #eaeaea;
     padding: 25px;
     border: none;
-    border-radius: 0;
+    border-radius: 50px 0 0 50px;
   }
 
   .menu li a:hover {
@@ -240,10 +240,6 @@ ul li a:active {
 
   .hamburguer {
     display: block;
-  }
-
-  ul {
-    flex-wrap: wrap;
   }
 
   h1,
@@ -341,6 +337,7 @@ ul li a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 435px;
 }
 
 .links-contato {
@@ -354,7 +351,7 @@ ul li a:active {
   color: #eaeaea;
   border-radius: 50%;
   padding: 8px 20px;
-  margin-right: 10px;
+  margin: 4px;
 }
 
 .links-contato:hover {
@@ -364,7 +361,7 @@ ul li a:active {
   background: #eaeaea;
   color: #242424;
   font-size: 3.5rem;
-  margin: 0 25px 0 15px;
+  margin: 0 20px;
 }
 
 .links-contato:last-child {
@@ -413,6 +410,7 @@ span {
 }
 
 .ul-projetos {
+  list-style: none;
   width: 100%;
   display: block;
   margin-bottom: 20px;
@@ -428,7 +426,7 @@ span {
 .ul-projetos li a {
   display: block;
   border-bottom: 1px solid black;
-  border-radius: 20px 0;
+  border-radius: 70px 30px;
   background-color: #242424;
   color: #fff;
   margin-bottom: 8px;
