@@ -440,6 +440,7 @@ span {
 .ul-projetos li a:hover {
   box-shadow: none;
   background-color: #dbdbdb;
+  color: #242424;
   scale: 1.05;
 }
 
