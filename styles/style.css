@@ -140,11 +140,18 @@ nav {
 }
 
 .logo {
-  font-family: "Bebas Neue", "Poppins", Arial;
+  font-family: "Bebas Neue", "Poppins", sans-serif;
   font-size: 2em;
   text-shadow: 3px 3px 10px black;
   color: #fff;
   letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  transform: rotate(-10deg);
+  scale: 1.8;
+  letter-spacing: 0.1em;
 }
 
 .hamburguer {
@@ -403,7 +410,6 @@ footer {
 
 span {
   color: #fff;
-  cursor: pointer;
   font-size: 0.9em;
 }
 

@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" href="styles/style.css" />
 
-    <script src="scripts/script.js" defer></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -24,7 +22,7 @@
   <body>
     <header>
       <nav>
-        <a href="index.html" class="logo">Gabriel</a>
+        <a href="index.html" class="logo">gbL</a>
 
         <div class="hamburguer" id="hamburguer">
           <i class="fas fa-bars"></i>
@@ -207,10 +205,22 @@
       <!-- RODAPÉ -->
       <footer class="bg-footer">
         <div class="rodape block">
-          <span>gbLw</span>
+          <span>gbLw1</span>
           <span>&copy; Todos os direitos reservados.</span>
         </div>
       </footer>
     </main>
+
+    <script>
+      function appendCacheBustingScript() {
+        var timestamp = new Date().getTime();
+        var updatedScriptUrl = "scripts/script.js?v=" + timestamp;
+        var updatedScript = document.createElement("script");
+        updatedScript.src = updatedScriptUrl;
+        document.body.appendChild(updatedScript);
+      }
+
+      window.addEventListener("load", appendCacheBustingScript);
+    </script>
   </body>
 </html>
