@@ -259,6 +259,10 @@ nav {
   .light {
     font-size: 1.2em !important;
   }
+
+  .links-container {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 450px) {
