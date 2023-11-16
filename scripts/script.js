@@ -89,12 +89,13 @@ function GenerateErrorResponse() {
   a.className = "link";
   a.target = "_blank";
   a.href = "https://github.com/gblw1";
-  a.innerHTML = "clicar aqui para visualizar";
+  a.innerHTML = "clicar aqui";
 
   p.className = "error";
   p.innerHTML =
-    "Ops, ocorreu um erro ao buscar os repositórios. Mas você pode ";
+    "Ops, ocorreu um erro ao tentar buscar os projetos. Mas você pode ";
   p.appendChild(a);
+  p.innerHTML += " para visualizar";
 
   ulProjetos.appendChild(p);
 }
