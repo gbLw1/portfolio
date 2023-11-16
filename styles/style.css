@@ -84,6 +84,8 @@ h5,
 h6 {
   margin-bottom: 20px;
   font-size: 2.5em;
+  color: #ffffff;
+  text-shadow: 1px 0.5px 4px black;
 }
 
 p {
@@ -92,6 +94,8 @@ p {
   text-align: justify;
   text-indent: 2em;
   margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 1px 0.5px 4px black;
 }
 
 a {
@@ -405,7 +409,7 @@ span {
 
 /*
 // ====================================================== 
-// PÁGINA → PROJETOS
+// SECTION → PROJETOS
 // ======================================================
 */
 
@@ -413,7 +417,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .ul-projetos {
