@@ -408,6 +408,11 @@ nav {
   margin-bottom: 35px;
 }
 
+.lista-habilidades > p {
+  text-align: left;
+  text-indent: 0;
+}
+
 /*
 // ====================================================== 
 // SECTION → LINKS & CONTATO
