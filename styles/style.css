@@ -346,6 +346,70 @@ nav {
 
 /*
 // ====================================================== 
+// SECTION → PROJETOS
+// ======================================================
+*/
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ul-projetos {
+  list-style: none;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  max-height: 240px;
+  padding: 0 20px;
+  overflow-y: auto;
+}
+
+.ul-projetos li {
+  margin: 0;
+}
+
+.ul-projetos li a {
+  display: block;
+  border-bottom: 1px solid black;
+  border-radius: 70px 30px;
+  background-color: #242424;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  padding: 10px 15px;
+}
+
+.ul-projetos li a:hover {
+  box-shadow: none;
+  background-color: #dbdbdb;
+  color: #242424;
+  scale: 1.05;
+}
+
+.link {
+  color: #92c4e7;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.error {
+  color: #ffa700;
+}
+
+/*
+// ====================================================== 
+// SECTION → HABILIDADES
+// ======================================================
+*/
+
+.subtitulo-habilidades {
+  margin-bottom: 35px;
+}
+
+/*
+// ====================================================== 
 // SECTION → LINKS & CONTATO
 // ======================================================
 */
@@ -411,58 +475,4 @@ footer {
 span {
   color: #fff;
   font-size: 0.9em;
-}
-
-/*
-// ====================================================== 
-// SECTION → PROJETOS
-// ======================================================
-*/
-
-.projetos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.ul-projetos {
-  list-style: none;
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-  max-height: 240px;
-  padding: 0 20px;
-  overflow-y: auto;
-}
-
-.ul-projetos li {
-  margin: 0;
-}
-
-.ul-projetos li a {
-  display: block;
-  border-bottom: 1px solid black;
-  border-radius: 70px 30px;
-  background-color: #242424;
-  color: #fff;
-  margin-bottom: 8px;
-  font-size: 0.8rem;
-  padding: 10px 15px;
-}
-
-.ul-projetos li a:hover {
-  box-shadow: none;
-  background-color: #dbdbdb;
-  color: #242424;
-  scale: 1.05;
-}
-
-.link {
-  color: #92c4e7;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.error {
-  color: #ffa700;
 }
