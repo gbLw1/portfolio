@@ -113,7 +113,7 @@ const points = [
   // percorre o array novamente
 ];
 
-let currentIndex = 0;
+let currentIndex = 2;
 let currentColor = { ...points[currentIndex] };
 
 function ChangeBackground() {
