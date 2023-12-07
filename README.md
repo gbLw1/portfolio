@@ -6,7 +6,7 @@ Para acessar o portfólio, [clique aqui](https://gblw1.github.io/portfolio/).
 
 ## Como foi desenvolvido
 
-O portfólio foi feito utilizando HTML, CSS e JavaScript puro, sem o uso de frameworks ou bibliotecas.
+O portfólio foi feito utilizando HTML, CSS e JavaScript, sem o uso de frameworks ou bibliotecas.
 
 Para o desenvolvimento, foi utilizado o [Neovim](https://neovim.io/) como editor de texto 
 (você pode acessar minha config [clicando aqui](https://github.com/gbLw1/neovim.config)),
