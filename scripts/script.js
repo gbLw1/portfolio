@@ -16,7 +16,7 @@ document.querySelector("main").addEventListener("click", RemoveActiveMenuClass);
 
 function SetMenuItensClickListener() {
   menu.childNodes.forEach((i) =>
-    i.addEventListener("click", RemoveActiveMenuClass),
+    i.addEventListener("click", RemoveActiveMenuClass)
   );
 }
 
@@ -77,7 +77,7 @@ function LoadGitHubProjects(repos) {
   });
 
   p.innerHTML =
-    "Aqui estão alguns projetos que desenvolvi testando novas linguagens e tecnologias.";
+    "Here are some of my projects that I developed while studying and working.";
 
   divProjetos.appendChild(p);
 }
@@ -89,55 +89,15 @@ function GenerateErrorResponse() {
   a.className = "link";
   a.target = "_blank";
   a.href = "https://github.com/gblw1";
-  a.innerHTML = "clicar aqui";
+  a.innerHTML = "click here";
 
   p.className = "error";
   p.innerHTML =
-    "Ops, ocorreu um erro ao tentar buscar os projetos. Mas você pode ";
+    "Oops! Something went wrong while fetching the projects. You can ";
   p.appendChild(a);
-  p.innerHTML += " para visualizar";
+  p.innerHTML += " to see them on GitHub.";
 
   ulProjetos.appendChild(p);
-}
-
-// ======================================================
-// ANIMATIONS - Background
-// ======================================================
-const points = [
-  { r: 235, g: 142, b: 142 },
-  { r: 235, g: 142, b: 235 },
-  { r: 142, g: 142, b: 235 },
-  { r: 142, g: 235, b: 235 },
-  { r: 142, g: 235, b: 142 },
-  { r: 235, g: 235, b: 142 },
-];
-
-let currentIndex = 2;
-
-function ChangeBackground() {
-  const currentColor = points[currentIndex];
-  const nextIndex = (currentIndex + 1) % points.length;
-  const nextColor = points[nextIndex];
-
-  document.body.style.background = `linear-gradient(to left, rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b}) -40%, #333 100%)`;
-
-  for (let key in currentColor) {
-    if (currentColor[key] < nextColor[key]) {
-      currentColor[key]++;
-    } else if (currentColor[key] > nextColor[key]) {
-      currentColor[key]--;
-    }
-  }
-
-  if (
-    Object.values(currentColor).every(
-      (val, i) => val === nextColor[Object.keys(currentColor)[i]],
-    )
-  ) {
-    currentIndex = nextIndex;
-  }
-
-  requestAnimationFrame(ChangeBackground);
 }
 
 // ======================================================
@@ -147,10 +107,6 @@ function Initialize() {
   SetMenuItensClickListener();
 
   FetchGitHubRepos();
-
-  ChangeBackground();
 }
-
-// const interval = setInterval(ChangeBackground, 200);
 
 Initialize();
