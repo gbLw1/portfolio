@@ -30,7 +30,7 @@ function setLoading(state) {
   const p = document.createElement("p");
   p.id = "loading";
   p.style.textAlign = "center";
-  p.innerHTML = "Carregando...";
+  p.innerHTML = "Loading...";
 
   if (state) {
     ulProjetos.appendChild(p);
@@ -77,7 +77,14 @@ function LoadGitHubProjects(repos) {
   });
 
   p.innerHTML =
-    "Here are some of my projects that I developed while studying and working.";
+    "Here are some of my side projects that I've been working on. You can check them out on my ";
+  const a = document.createElement("a");
+  a.className = "link";
+  a.target = "_blank";
+  a.href = "https://github.com/gblw1";
+  a.innerHTML = "GitHub";
+  p.appendChild(a);
+  p.innerHTML += " profile.";
 
   divProjetos.appendChild(p);
 }

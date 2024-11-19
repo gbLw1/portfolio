@@ -1,381 +1,768 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Gabriel H. Grassi</title>
 
-  <title>Gabriel H. Grassi</title>
+    <link rel="stylesheet" href="styles/style.css" />
 
-  <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">gbL</a>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">gbL</a>
-
-      <div class="hamburguer" id="hamburguer">
-        <i class="fas fa-bars"></i>
-      </div>
-
-      <ul class="menu" id="menu">
-        <li><a href="#about">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HOME -->
-    <section class="container home">
-      <div class="block col">
-        <h1 class="titulo-home">Welcome!</h1>
-        <p class="light">
-          Learn a little about me and my work as a software developer.
-        </p>
-      </div>
-
-      <a href="#about">
-        <i class="fas fa-angle-down flecha"></i>
-      </a>
-    </section>
-
-    <div class="hr"></div>
-
-    <!-- SOBRE MIM -->
-    <section class="container" id="about">
-      <div class="block">
-        <div class="foto-sobre">
-          <img src="img/programmer.gif" alt="programmer gif" class="img programmer" />
-        </div>
-        <div>
-          <h2 style="text-align: right">Who am I?</h2>
-          <p>
-            <i class="fas fa-user-graduate"></i>&nbsp; My name is Gabriel Henrique Grassi, I was born on February 22,
-            2000 in the city of Jaú-SP and I am graduated in Internet Systems at FATEC Jahu.
-          </p>
-
-          <p>
-            <i class="fas fa-laptop-code"></i>&nbsp; I developed a huge interest in software engineering, since then I
-            have been studying every day to improve my knowledge.
-          </p>
-
-          <p>
-            <i class="fas fa-code"></i>&nbsp; I've been working as a back-end developer with .NET C#, but i've
-            also dipped my toes into front-end dev with React and a few
-            <a href="#skills" class="internal-link">other technologies.</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="hr"></div>
-
-    <!-- PROJETOS -->
-    <section class="container" id="projects">
-      <div class="block">
-        <div>
-          <img src="img/projects.png" alt="projects img" class="img" />
+        <div class="hamburguer" id="hamburguer">
+          <i class="fas fa-bars"></i>
         </div>
 
-        <!-- Lista meus projetos -->
-        <div class="projetos">
-          <h2 style="text-align: right">My projects</h2>
+        <ul class="menu" id="menu">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-          <ul class="ul-projetos"></ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="hr"></div>
-
-    <!-- HABILIDADES -->
-    <section class="container" id="skills">
-      <div class="block">
-        <div>
-          <h2>My skills</h2>
-
-          <p class="subtitulo-habilidades">
-            Below are listed some of the technologies and tools that I already developed projects with.
-            <i class="fas fa-tools"></i>
+    <main>
+      <!-- HOME -->
+      <section class="container home">
+        <div class="block col">
+          <h1 class="titulo-home">Welcome!</h1>
+          <p class="light">
+            Learn a little about me and my work as a software developer.
           </p>
+        </div>
 
-          <div class="lista-habilidades">
-            <p><strong>Programming languages</strong></p>
+        <a href="#about">
+          <i class="fas fa-angle-down flecha"></i>
+        </a>
+      </section>
+
+      <div class="hr"></div>
+
+      <!-- SOBRE MIM -->
+      <section class="container" id="about">
+        <div class="block">
+          <div class="foto-sobre">
+            <img
+              src="img/programmer.gif"
+              alt="programmer gif"
+              class="img programmer"
+            />
+          </div>
+          <div>
+            <h2 style="text-align: right">Who am I?</h2>
             <p>
-              <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer" title="C#">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                  alt="csharp" width="40" height="40" />
-              </a>
-
-              <a href="https://golang.org" target="_blank" rel="noreferrer" title="Go">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go"
-                  width="40" height="40" />
-              </a>
-
-              <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer" title="Typescript">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                  alt="typescript" width="40" height="40" />
-              </a>
-
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"
-                title="Javascript">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                  alt="javascript" width="40" height="40" />
-              </a>
-
-              <a href="https://www.php.net" target="_blank" rel="noreferrer" title="PHP">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                  alt="php" width="40" height="40" />
-              </a>
-
-              <a href="https://www.lua.org/" target="_blank" rel="noreferrer" title="Lua">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/lua/lua-original.svg"
-                  alt="lua" width="40" height="40" />
-              </a>
-
-              <a href="https://www.java.com/pt-BR/" target="_blank" rel="noreferrer" title="Java">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/java/java-original.svg"
-                  alt="java" width="40" height="40" />
-              </a>
-
-              <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noreferrer"
-                title="C">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/c/c-original.svg"
-                  alt="c" width="40" height="40" />
-              </a>
-
-              <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" rel="noreferrer" title="C++">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/cplusplus/cplusplus-original.svg"
-                  alt="c++" width="40" height="40" />
-              </a>
+              <i class="fas fa-user-graduate"></i>&nbsp; My name is Gabriel
+              Henrique Grassi, I was born on February 22, 2000 in the city of
+              Jaú-SP and I am graduated in Internet Systems at FATEC Jahu.
             </p>
 
-            <p><strong>Frameworks and Libraries</strong></p>
             <p>
-              <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer" title=".NET">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
-                  alt="dotnet" width="40" height="40" />
-              </a>
-
-              <a href="https://azure.microsoft.com/en-US/products/functions/" target="_blank" rel="noreferrer"
-                title="Azure Functions">
-                <img src="https://azure.microsoft.com/svghandler/functions/?width=320&height=320" alt="docker"
-                  width="40" height="40" />
-              </a>
-
-              <a href="https://www.rabbitmq.com" target="_blank" rel="noreferrer" title="RabbitMQ">
-                <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="rabbitMQ" width="40"
-                  height="40" />
-              </a>
-
-              <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" target="_blank" rel="noreferrer"
-                title="Blazor">
-                <img
-                  src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/04/BrandBlazor_big_with_border.png"
-                  alt="mssql" width="40" height="40" />
-              </a>
-
-              <a href="https://reactjs.org/" target="_blank" rel="noreferrer" title="React">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                  alt="react" width="40" height="40" />
-              </a>
-
-              <a href="https://nextjs.org/" target="_blank" rel="noreferrer" title="NextJS">
-                <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40" />
-              </a>
-
-              <a href="https://vuejs.org/" target="_blank" rel="noreferrer" title="VueJS">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
-                  alt="vuejs" width="40" height="40" />
-              </a>
-
-              <a href="https://svelte.dev" target="_blank" rel="noreferrer" title="Svelte">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="40"
-                  height="40" />
-              </a>
-
-              <a href="https://getbootstrap.com" target="_blank" rel="noreferrer" title="Bootstrap">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                  alt="bootstrap" width="40" height="40" />
-              </a>
-
-              <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" title="TailwindCSS">
-                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40"
-                  height="40" />
-              </a>
-
-              <a href="https://www.chartjs.org" target="_blank" rel="noreferrer" title="ChartJS">
-                <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40" />
-              </a>
+              <i class="fas fa-laptop-code"></i>&nbsp; I developed a huge
+              interest in software engineering since I was a teenager 'cause I
+              always had the curiosity to understand how things work.
             </p>
 
-
-            <p><strong>Database</strong></p>
             <p>
-              <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer" title="SQL Server">
-                <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40"
-                  height="40" />
-              </a>
-              <a href="https://www.postgresql.org" target="_blank" rel="noreferrer" title="PostgreSQL">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-                  alt="postgresql" width="40" height="40" />
-              </a>
-              <a href="https://www.mysql.com/" target="_blank" rel="noreferrer" title="MySQL">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                  alt="mysql" width="40" height="40" />
-              </a>
-              <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer" title="SQLite">
-                <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40"
-                  height="40" />
-              </a>
-              <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" title="MongoDB">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-                  alt="mongodb" width="40" height="40" />
-              </a>
-            </p>
-
-            <p><strong>Tools</strong></p>
-            <p>
-              <a href="https://neovim.io/" target="_blank" rel="noreferrer" title="Neovim">
-                <img src="https://static-00.iconduck.com/assets.00/apps-neovim-icon-1024x1024-cvzervfu.png" alt="neovim"
-                  width="40" height="40" />
-              </a>
-
-              <a href="https://www.vim.org/" target="_blank" rel="noreferrer" title="Vim">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/vim/vim-original.svg"
-                  alt="neovim" width="40" height="40" />
-              </a>
-
-              <a href="https://pt.wikipedia.org/wiki/Bash" target="_blank" rel="noreferrer" title="Bash">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/bash/bash-original.svg"
-                  alt="bash" width="40" height="40" />
-              </a>
-
-              <a href="https://archlinux.org/" target="_blank" rel="noreferrer" title="Arch Linux">
-                <img src="https://static-00.iconduck.com/assets.00/archlinux-icon-2048x2048-q7549ths.png" alt="linux"
-                  width="40" height="40" />
-              </a>
-
-              <a href="https://www.linux.org/" target="_blank" rel="noreferrer" title="Linux">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                  alt="linux" width="40" height="40" />
-              </a>
-
-              <a href="https://git-scm.com/" target="_blank" rel="noreferrer" title="Git">
-                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40"
-                  height="40" />
-              </a>
-
-              <a href="https://postman.com" target="_blank" rel="noreferrer" title="Postman">
-                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40"
-                  height="40" />
-              </a>
-
-              <a href="https://www.docker.com/" target="_blank" rel="noreferrer" title="Docker">
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
-                  alt="docker" width="40" height="40" />
-              </a>
-
-              <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer" title="Azure">
-                <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure"
-                  width="40" height="40" />
-              </a>
+              <i class="fas fa-code"></i>&nbsp; I'm always looking for new
+              challenges and learning new technologies, my goal is to transform
+              this knowledge into software that helps the world.
             </p>
           </div>
         </div>
+      </section>
 
-        <div>
-          <img src="img/skills.svg" alt="skills img" class="img" />
-        </div>
-      </div>
-    </section>
+      <div class="hr"></div>
 
-    <div class="hr"></div>
+      <!-- PROFISSIONAL -->
+      <section class="container" id="projects">
+        <div class="block">
+          <div class="">
+            <h2 style="text-align: left">Professional experience</h2>
 
-    <!-- CONTATO -->
-    <section class="container" id="contact">
-      <div class="block">
-        <div>
-          <div class="links-container">
-            <a class="links-contato" href="http://fb.com/gblw1" target="_blank" title="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a>
+            <p>
+              In the past few years, I have contributed to the fullstack
+              development of web applications integrating RESTful APIs mainly
+              with .NET C#, using SQL Server and PostgreSQL as databases,
+              creating and optimizing Procedures, Views, and Triggers for
+              efficient operations.
+            </p>
 
-            <a class="links-contato" href="https://www.instagram.com/gblw1/" target="_blank" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
+            <p>
+              I have applied SOLID principles to ensure modular,
+              easy-to-maintain, and extensible code, in addition to using the
+              Unit of Work pattern with the ORM Entity Framework Core for
+              managing transactions and accessing data in a cohesive and
+              efficient way.
+            </p>
 
-            <a class="links-contato" href="https://github.com/gblw1" target="_blank" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
+            <p>
+              My experience in software architecture ranges from a simple
+              monolithic application to a complex microservice web app with
+              Message Bus, Docker and Kubernetes.
+            </p>
 
-            <a class="links-contato" href="https://www.linkedin.com/in/gblw1/" target="_blank" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+            <p>
+              Beyond the regular HTTP requests, I've implemented WebSockets for
+              real-time (full-duplex) TCP communication and notifications a
+              couple times in different programming languages.
+            </p>
 
-            <a class="links-contato" href="https://discordapp.com/users/627313809513644037" target="_blank"
-              title="Discord">
-              <i class="fab fa-discord"></i>
-            </a>
+            <p>
+              Additionally, I have contributed to the development of responsive
+              and interactive user interfaces with modern frameworks such as
+              Vue.js, React.js, and Next.js, and .NET frameworks such as ASP.
+              NET MVC and Blazor WASM.
+            </p>
 
-            <a class="links-contato" href="mailto:gabrielhenrique2504@gmail.com" title="E-mail">
-              <i class="far fa-envelope"></i>
-            </a>
+            <p>
+              I have also participated in some side projects in other
+              programming languages, such as PHP, Go, Python and Java.
+            </p>
           </div>
         </div>
-        <div>
-          <img src="img/contact.svg" alt="contact img" />
+      </section>
+
+      <div class="hr"></div>
+
+      <!-- PROJETOS -->
+      <section class="container" id="projects">
+        <div class="block">
+          <div>
+            <img src="img/projects.png" alt="projects img" class="img" />
+          </div>
+
+          <!-- Lista meus projetos -->
+          <div class="projetos">
+            <h2 style="text-align: right">My projects</h2>
+
+            <ul class="ul-projetos"></ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- RODAPÉ -->
-    <footer class="bg-footer">
-      <div class="rodape block">
-        <span>gbLw1</span>
-        <span>&copy; All rights reserved.</span>
-      </div>
-    </footer>
-  </main>
+      <div class="hr"></div>
 
-  <script>
-    function appendCacheBustingScript() {
-      var timestamp = new Date().getTime();
-      var updatedScriptUrl = "scripts/script.js?v=" + timestamp;
-      var updatedScript = document.createElement("script");
-      updatedScript.src = updatedScriptUrl;
-      document.body.appendChild(updatedScript);
-    }
+      <!-- HABILIDADES -->
+      <section class="container" id="skills">
+        <div class="block">
+          <div>
+            <h2>My skills</h2>
 
-    window.addEventListener("load", appendCacheBustingScript);
-  </script>
-</body>
+            <p class="subtitulo-habilidades">
+              Below are listed some of the technologies and tools that I already
+              developed projects with.
+              <i class="fas fa-tools"></i>
+            </p>
 
+            <div class="lista-habilidades">
+              <p><strong>Programming languages</strong></p>
+              <p>
+                <a
+                  href="https://www.w3schools.com/cs/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="C#"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                    alt="csharp"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://golang.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Go"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
+                    alt="go"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Typescript"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                    alt="typescript"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Javascript"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="javascript"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.php.net"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="PHP"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                    alt="php"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.lua.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Lua"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/lua/lua-original.svg"
+                    alt="lua"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.java.com/pt-BR/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Java"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/java/java-original.svg"
+                    alt="java"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://en.wikipedia.org/wiki/C_(programming_language)"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="C"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/c/c-original.svg"
+                    alt="c"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://en.wikipedia.org/wiki/C%2B%2B"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="C++"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/cplusplus/cplusplus-original.svg"
+                    alt="c++"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </p>
+
+              <p><strong>Frameworks and Libraries</strong></p>
+              <p>
+                <a
+                  href="https://dotnet.microsoft.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title=".NET"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
+                    alt="dotnet"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://azure.microsoft.com/en-US/products/functions/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Azure Functions"
+                >
+                  <img
+                    src="https://azure.microsoft.com/svghandler/functions/?width=320&height=320"
+                    alt="docker"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.rabbitmq.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="RabbitMQ"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg"
+                    alt="rabbitMQ"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Blazor"
+                >
+                  <img
+                    src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/04/BrandBlazor_big_with_border.png"
+                    alt="mssql"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://reactjs.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="React"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                    alt="react"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="NextJS"
+                >
+                  <img
+                    src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                    alt="nextjs"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://vuejs.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="VueJS"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
+                    alt="vuejs"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://svelte.dev"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Svelte"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
+                    alt="svelte"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://getbootstrap.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Bootstrap"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                    alt="bootstrap"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="TailwindCSS"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                    alt="tailwind"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.chartjs.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="ChartJS"
+                >
+                  <img
+                    src="https://www.chartjs.org/media/logo-title.svg"
+                    alt="chartjs"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </p>
+
+              <p><strong>Database</strong></p>
+              <p>
+                <a
+                  href="https://www.microsoft.com/en-us/sql-server"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="SQL Server"
+                >
+                  <img
+                    src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
+                    alt="mssql"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a
+                  href="https://www.postgresql.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="PostgreSQL"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                    alt="postgresql"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a
+                  href="https://www.mysql.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="MySQL"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    alt="mysql"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a
+                  href="https://www.sqlite.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="SQLite"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
+                    alt="sqlite"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a
+                  href="https://www.mongodb.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="MongoDB"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                    alt="mongodb"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </p>
+
+              <p><strong>Tools</strong></p>
+              <p>
+                <a
+                  href="https://neovim.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Neovim"
+                >
+                  <img
+                    src="https://static-00.iconduck.com/assets.00/apps-neovim-icon-1024x1024-cvzervfu.png"
+                    alt="neovim"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.vim.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Vim"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/vim/vim-original.svg"
+                    alt="neovim"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://pt.wikipedia.org/wiki/Bash"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Bash"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/bash/bash-original.svg"
+                    alt="bash"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://archlinux.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Arch Linux"
+                >
+                  <img
+                    src="https://static-00.iconduck.com/assets.00/archlinux-icon-2048x2048-q7549ths.png"
+                    alt="linux"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.linux.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Linux"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                    alt="linux"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://git-scm.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Git"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                    alt="git"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://postman.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Postman"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                    alt="postman"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://www.docker.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Docker"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                    alt="docker"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://kubernetes.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Kubernetes"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain-wordmark.svg"
+                    alt="kubernetes"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a
+                  href="https://azure.microsoft.com/en-in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Azure"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
+                    alt="azure"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <img src="img/skills.svg" alt="skills img" class="img" />
+          </div>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <!-- CONTATO -->
+      <section class="container" id="contact">
+        <div class="block">
+          <div>
+            <div class="links-container">
+              <a
+                class="links-contato"
+                href="http://fb.com/gblw1"
+                target="_blank"
+                title="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a
+                class="links-contato"
+                href="https://www.instagram.com/gblw1/"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a
+                class="links-contato"
+                href="https://github.com/gblw1"
+                target="_blank"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                class="links-contato"
+                href="https://www.linkedin.com/in/gblw1/"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                class="links-contato"
+                href="https://discordapp.com/users/627313809513644037"
+                target="_blank"
+                title="Discord"
+              >
+                <i class="fab fa-discord"></i>
+              </a>
+
+              <a
+                class="links-contato"
+                href="mailto:gabrielhenrique2504@gmail.com"
+                title="E-mail"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <img src="img/contact.svg" alt="contact img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- RODAPÉ -->
+      <footer class="bg-footer">
+        <div class="rodape block">
+          <span>gbLw1</span>
+          <span>&copy; All rights reserved.</span>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      function appendCacheBustingScript() {
+        var timestamp = new Date().getTime();
+        var updatedScriptUrl = "scripts/script.js?v=" + timestamp;
+        var updatedScript = document.createElement("script");
+        updatedScript.src = updatedScriptUrl;
+        document.body.appendChild(updatedScript);
+      }
+
+      window.addEventListener("load", appendCacheBustingScript);
+    </script>
+  </body>
 </html>
