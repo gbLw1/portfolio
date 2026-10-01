@@ -1,0 +1,41 @@
+.soft-skills-list {
+  border-top: 1px solid var(--line);
+}
+
+.soft-skills-row {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  grid-template-columns: minmax(13rem, 0.45fr) 1fr;
+  padding: 1.35rem 0;
+}
+
+.soft-skills-row h3 {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.soft-skills-keywords {
+  color: var(--muted);
+  display: grid;
+  font-size: 0.98rem;
+  gap: 0.65rem 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 760px) {
+  .soft-skills-row {
+    gap: 0.45rem;
+    grid-template-columns: 1fr;
+    padding: 1.1rem 0;
+  }
+
+  .soft-skills-keywords {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,14 +1,17 @@
 import { useI18n } from '../../shared/i18n'
+import './soft-skills.css'
 
 export function SoftSkills() {
   const { copy } = useI18n()
 
   return (
-    <div className="skills-grid">
+    <div className="soft-skills-list">
       {copy.softSkills.groups.map((group) => (
-        <article className="skill-card" key={group.label}>
+        <article className="soft-skills-row" key={group.label}>
           <h3>{group.label}</h3>
-          <ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
+          <ul className="soft-skills-keywords">
+            {group.items.map((item) => <li key={item}>{item}</li>)}
+          </ul>
         </article>
       ))}
     </div>

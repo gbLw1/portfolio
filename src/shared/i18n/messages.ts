@@ -6,9 +6,8 @@ export const messages: Record<Locale, Copy> = {
     nav: { about: 'Perfil', education: 'Formação', path: 'Experiência', skills: 'Competências', contact: 'Contato', linkedin: 'LinkedIn' },
     actions: { backToTop: 'Voltar ao topo' },
     hero: {
-      availability: 'Tech Lead · Software Engineer', proofAriaLabel: 'Destaques profissionais', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 anos em tecnologia · profissional desde 2021',
-      summary: 'Liderança técnica hands-on, arquitetura de software e produtos web com .NET, React, TypeScript e Azure.', cue: 'VER EXPERIÊNCIA', location: 'BR / REMOTO',
-      highlights: ['Liderança técnica de mais de 10 desenvolvedores', 'Da demanda do cliente à entrega técnica', 'Atuação hands-on com .NET, React e Azure', 'Decisões técnicas com visão de produto']
+      availability: 'Tech Lead · Software Engineer', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 anos em tecnologia · profissional desde 2021',
+      summary: 'Liderança técnica hands-on, arquitetura de software e produtos web com .NET, React, TypeScript e Azure.', cue: 'VER EXPERIÊNCIA'
     },
     about: {
       eyebrow: 'Perfil profissional', title: 'Experiência técnica com foco em produto e pessoas.',
@@ -35,7 +34,7 @@ export const messages: Record<Locale, Copy> = {
       { label: 'Arquitetura & plataforma', items: ['Clean Architecture', 'FSD', 'Azure', 'Docker', 'Kubernetes', 'CI/CD · Jenkins'] },
       { label: 'Liderança & IA', items: ['Mentoria', '1:1s', 'Code Review', 'AI-assisted engineering', 'Claude', 'Codex', 'MCP'] }
     ] },
-    softSkills: { eyebrow: 'Competências comportamentais', title: 'Soft Skills', groups: [
+    softSkills: { eyebrow: 'Pessoas e colaboração', title: 'Competências comportamentais', groups: [
       { label: 'Comunicação', items: ['Alinhamento com clientes', 'Tradução de demandas', 'Especificação técnica'] },
       { label: 'Desenvolvimento de pessoas', items: ['Mentoria', '1:1s', 'Feedback contínuo'] },
       { label: 'Decisão e execução', items: ['Priorização', 'Planejamento técnico', 'Gestão de incidentes'] },
@@ -49,9 +48,8 @@ export const messages: Record<Locale, Copy> = {
     nav: { about: 'Profile', education: 'Education', path: 'Experience', skills: 'Skills', contact: 'Contact', linkedin: 'LinkedIn' },
     actions: { backToTop: 'Back to top' },
     hero: {
-      availability: 'Tech Lead · Software Engineer', proofAriaLabel: 'Professional highlights', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 years in technology · working professionally since 2021',
-      summary: 'Hands-on technical leadership, software architecture, and web products with .NET, React, TypeScript, and Azure.', cue: 'VIEW EXPERIENCE', location: 'BRAZIL / REMOTE',
-      highlights: ['Technical leadership for more than 10 developers', 'From customer requirements to technical delivery', 'Hands-on work with .NET, React, and Azure', 'Technical decisions with product perspective']
+      availability: 'Tech Lead · Software Engineer', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 years in technology · working professionally since 2021',
+      summary: 'Hands-on technical leadership, software architecture, and web products with .NET, React, TypeScript, and Azure.', cue: 'VIEW EXPERIENCE'
     },
     about: {
       eyebrow: 'Professional profile', title: 'Technical experience focused on product and people.',
@@ -78,7 +76,7 @@ export const messages: Record<Locale, Copy> = {
       { label: 'Architecture & platform', items: ['Clean Architecture', 'FSD', 'Azure', 'Docker', 'Kubernetes', 'CI/CD · Jenkins'] },
       { label: 'Leadership & AI', items: ['Mentoring', '1:1s', 'Code Review', 'AI-assisted engineering', 'Claude', 'Codex', 'MCP'] }
     ] },
-    softSkills: { eyebrow: 'Professional strengths', title: 'Soft Skills', groups: [
+    softSkills: { eyebrow: 'People & collaboration', title: 'Behavioral strengths', groups: [
       { label: 'Communication', items: ['Customer alignment', 'Requirements translation', 'Technical specification'] },
       { label: 'People development', items: ['Mentoring', '1:1s', 'Continuous feedback'] },
       { label: 'Decision & execution', items: ['Prioritization', 'Technical planning', 'Incident management'] },

@@ -39,8 +39,7 @@
   background: radial-gradient(circle at 82% 18%, rgba(8, 127, 122, 0.3), transparent 25rem), var(--ink);
   color: #fff;
   display: grid;
-  gap: clamp(2rem, 6vw, 7rem);
-  grid-template-columns: minmax(0, 1.35fr) minmax(17rem, 0.65fr);
+  grid-template-columns: minmax(0, 1fr);
   min-height: 39rem;
   padding: clamp(6.5rem, 10vw, 8.5rem) clamp(1.25rem, 8vw, 9rem) 3rem;
   position: relative;
@@ -56,9 +55,7 @@
   position: absolute;
 }
 
-.hero-main,
-.hero-proof,
-.hero-meta {
+.hero-main {
   position: relative;
   z-index: 1;
 }
@@ -119,49 +116,11 @@
   font-size: 1rem;
 }
 
-.hero-proof {
-  align-self: end;
-  background: rgba(255, 255, 255, 0.96);
-  color: var(--ink);
-  padding: 1.2rem;
-}
-
-.hero-proof ul,
 .education-list,
 .timeline {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.hero-proof li {
-  border-top: 1px solid var(--line);
-  font-size: 0.86rem;
-  font-weight: 700;
-  line-height: 1.4;
-  padding: 0.75rem 0;
-}
-
-.hero-proof li:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.hero-proof li:last-child {
-  padding-bottom: 0;
-}
-
-.hero-meta {
-  align-items: center;
-  bottom: 1.5rem;
-  color: #93a8ad;
-  display: flex;
-  font-size: 0.72rem;
-  gap: 1.25rem;
-  letter-spacing: 0.08em;
-  position: absolute;
-  right: clamp(1.25rem, 8vw, 9rem);
-  text-transform: uppercase;
 }
 
 .about {
@@ -287,14 +246,6 @@
   background: var(--surface);
 }
 
-.timeline li {
-  transition: padding 0.2s ease;
-}
-
-.timeline li:hover {
-  padding-left: 0.5rem;
-}
-
 .timeline-company {
   font-size: 1.15rem;
   letter-spacing: -0.025em;
@@ -306,6 +257,29 @@
   font-weight: 700;
 }
 
+@media (min-width: 761px) {
+  .timeline li {
+    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 1.5rem 0;
+  }
+
+  .timeline li > div {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .timeline-period {
+    align-self: start;
+    font-size: 0.9rem;
+    font-weight: 700;
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0.25rem;
+    white-space: nowrap;
+  }
+}
+
 .competencies {
   background: var(--ink);
   color: #fff;
@@ -315,70 +289,12 @@
   color: #a8bac0;
 }
 
-.skills-grid {
-  border-left: 1px solid var(--line);
-  border-top: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.skill-card {
-  background: rgba(255, 255, 255, 0.02);
-  border-bottom: 1px solid var(--line);
-  border-right: 1px solid var(--line);
-  min-height: 11.5rem;
-  padding: 1.35rem;
-  transition: background 0.2s ease;
-}
-
-.skill-card:hover {
-  background: rgba(124, 227, 219, 0.1);
-}
-
-.skill-card h3 {
-  font-size: 1.25rem;
-  letter-spacing: -0.03em;
-  margin: 0 0 0.85rem;
-}
-
-.skill-card ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.skill-card li {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 99px;
-  color: #d9e4e6;
-  font-size: 0.8rem;
-  padding: 0.35rem 0.55rem;
-}
-
 .soft-skills {
   background: var(--surface);
 }
 
-.soft-skills .section-heading h2 {
-  color: var(--accent);
-}
-
-.soft-skills .skill-card {
-  background: var(--paper);
-  border-color: var(--line);
-  color: var(--ink);
-}
-
-.soft-skills .skill-card:hover {
-  background: var(--accent-soft);
-}
-
-.soft-skills .skill-card li {
-  border-color: var(--line-strong);
-  color: var(--muted);
+.leadership-section {
+  background: #edf3f4;
 }
 
 footer {
@@ -395,15 +311,6 @@ footer {
     grid-template-columns: 1fr;
     min-height: 38rem;
     padding-top: 6.2rem;
-  }
-
-  .hero-proof {
-    align-self: start;
-    max-width: 33rem;
-  }
-
-  .hero-meta {
-    display: none;
   }
 
   .about-copy {
@@ -433,10 +340,6 @@ footer {
   .education-list li,
   .timeline li {
     gap: 0.55rem;
-    grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
     grid-template-columns: 1fr;
   }
 

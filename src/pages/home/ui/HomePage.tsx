@@ -48,7 +48,6 @@ export function HomePage() {
       <section className="section competencies" id="competencias">
         <SectionHeading eyebrow={copy.skills.eyebrow} title={copy.skills.title} />
         <SkillsGrid />
-        <Leadership />
       </section>
 
       <section className="section soft-skills">
@@ -59,6 +58,10 @@ export function HomePage() {
       <section className="education section" id="formacao">
         <SectionHeading eyebrow={copy.education.eyebrow} title={copy.education.title} />
         <Education />
+      </section>
+
+      <section className="leadership-section section">
+        <Leadership />
       </section>
 
       <Contact />

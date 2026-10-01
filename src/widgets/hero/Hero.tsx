@@ -1,4 +1,3 @@
-import { profile } from '../../shared/config/profile'
 import { useI18n } from '../../shared/i18n'
 import './hero.css'
 
@@ -19,15 +18,6 @@ export function Hero() {
           {copy.hero.cue}<span>↓</span>
         </a>
       </div>
-      <aside className="hero-proof" aria-label={copy.hero.proofAriaLabel}>
-        <ul>
-          {copy.hero.highlights.map((item) => <li key={item}>{item}</li>)}
-        </ul>
-      </aside>
-      <aside className="hero-meta">
-        <span>{copy.hero.location}</span>
-        <span>{profile.startedProfessionally} →</span>
-      </aside>
     </section>
   )
 }

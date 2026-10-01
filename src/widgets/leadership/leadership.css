@@ -1,10 +1,10 @@
 .leadership {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid var(--line);
   display: grid;
   gap: clamp(2rem, 5vw, 5rem);
   grid-template-columns: minmax(15rem, 0.75fr) minmax(0, 1.25fr);
-  margin-top: clamp(2.75rem, 5vw, 5rem);
-  padding-top: 1.25rem;
+  margin: 0;
+  padding-top: 1.5rem;
 }
 
 .leadership-intro h3 {
@@ -15,7 +15,7 @@
 }
 
 .leadership-intro > p:last-child {
-  color: #c5d3d6;
+  color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.65;
   margin: 0;
@@ -29,7 +29,7 @@
 }
 
 .leadership-areas li {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid var(--line);
   display: grid;
   gap: 1rem;
   grid-template-columns: minmax(9rem, 0.45fr) 1fr;
@@ -37,16 +37,16 @@
 }
 
 .leadership-areas li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid var(--line);
 }
 
 .leadership-areas strong {
-  color: #7ce3db;
+  color: var(--accent);
   font-size: 0.84rem;
 }
 
 .leadership-areas span {
-  color: #c5d3d6;
+  color: var(--muted);
   font-size: 0.94rem;
   line-height: 1.55;
 }

@@ -6,14 +6,11 @@ export type Copy = {
   actions: { backToTop: string }
   hero: {
     availability: string
-    proofAriaLabel: string
     title: string
     accent: string
     tail: string
     summary: string
     cue: string
-    location: string
-    highlights: string[]
   }
   about: { eyebrow: string; title: string; lead: string; paragraphs: string[]; impact: { value: string; label: string }[] }
   education: { eyebrow: string; title: string; credentialLabel: string; items: { period: string; institution: string; title: string; description: string; credentialUrl?: string }[] }

@@ -5,7 +5,7 @@ export function Leadership() {
   const { copy } = useI18n()
 
   return (
-    <section className="leadership" aria-labelledby="leadership-title">
+    <div className="leadership" aria-labelledby="leadership-title">
       <div className="leadership-intro">
         <p className="eyebrow">{copy.leadership.eyebrow}</p>
         <h3 id="leadership-title">{copy.leadership.title}</h3>
@@ -19,6 +19,6 @@ export function Leadership() {
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   )
 }
