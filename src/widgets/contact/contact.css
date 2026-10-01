@@ -1,0 +1,55 @@
+.contact {
+  background: var(--accent);
+  color: #fff;
+}
+
+.contact .eyebrow {
+  color: #dff5f1;
+}
+
+.contact h2 {
+  max-width: 45rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+
+.contact-links a {
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 0.65rem;
+  min-width: min(100%, 17rem);
+  padding: 0.75rem 0;
+}
+
+.contact-links a:hover {
+  border-color: #fff;
+}
+
+.contact-links svg {
+  flex: 0 0 auto;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.contact-link-arrow {
+  font-size: 1.1rem;
+  margin-left: auto;
+}
+
+@media (max-width: 760px) {
+  .contact-links {
+    display: grid;
+  }
+
+  .contact-links a {
+    min-width: 100%;
+  }
+}

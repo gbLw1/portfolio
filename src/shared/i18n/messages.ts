@@ -42,7 +42,7 @@ export const messages: Record<Locale, Copy> = {
       { label: 'Visão sistêmica', items: ['Pensamento crítico', 'Resolução de problemas', 'Gestão de conflitos'] }
     ] },
     leadership: { eyebrow: 'Liderança técnica', title: 'O que faço como Tech Lead', intro: 'Conecto contexto de negócio, direção técnica e desenvolvimento do time para tornar entregas mais claras e sustentáveis.', areas: [{ label: 'Negócio & produto', text: 'Alinho expectativas com clientes e traduzo demandas em escopo técnico viável.' }, { label: 'Arquitetura & entrega', text: 'Direciono prioridades, decisões técnicas e a execução das entregas.' }, { label: 'Pessoas & qualidade', text: 'Desenvolvo autonomia com mentoria, 1:1s, feedback e code review.' }] },
-    contact: { eyebrow: 'Contato', title: 'Aberto a oportunidades em tecnologia, impacto e crescimento.', accent: '', links: ['E-mail', 'LinkedIn', 'GitHub'] }, footer: 'Portfólio profissional.'
+    contact: { eyebrow: 'Contato', title: 'Aberto a oportunidades em tecnologia, impacto e crescimento.', accent: '' }, footer: 'Portfólio profissional.'
   },
   'en-US': {
     meta: { title: 'Gabriel Henrique Grassi · Tech Lead', description: 'Tech Lead with experience in architecture, .NET, React, Azure, and technical leadership.' },
@@ -85,6 +85,6 @@ export const messages: Record<Locale, Copy> = {
       { label: 'Systems thinking', items: ['Critical thinking', 'Problem solving', 'Conflict management'] }
     ] },
     leadership: { eyebrow: 'Technical leadership', title: 'What I do as a Tech Lead', intro: 'I connect business context, technical direction, and team development to make delivery clearer and more sustainable.', areas: [{ label: 'Business & product', text: 'I align expectations with customers and turn requirements into viable technical scope.' }, { label: 'Architecture & delivery', text: 'I guide priorities, technical decisions, and delivery execution.' }, { label: 'People & quality', text: 'I develop autonomy through mentoring, 1:1s, feedback, and code review.' }] },
-    contact: { eyebrow: 'Contact', title: 'Open to opportunities in technology, impact, and growth.', accent: '', links: ['Email', 'LinkedIn', 'GitHub'] }, footer: 'Professional portfolio.'
+    contact: { eyebrow: 'Contact', title: 'Open to opportunities in technology, impact, and growth.', accent: '' }, footer: 'Professional portfolio.'
   }
 }

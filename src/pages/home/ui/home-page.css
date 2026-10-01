@@ -20,8 +20,7 @@
   text-transform: uppercase;
 }
 
-.section h2,
-.contact h2 {
+.section h2 {
   font-size: clamp(2rem, 3.6vw, 3.8rem);
   letter-spacing: -0.055em;
   line-height: 1.06;
@@ -382,44 +381,6 @@
   color: var(--muted);
 }
 
-.contact {
-  background: var(--accent);
-  color: #fff;
-}
-
-.contact .eyebrow {
-  color: #dff5f1;
-}
-
-.contact h2 {
-  max-width: 45rem;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2.25rem;
-}
-
-.contact-links a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  display: flex;
-  font-size: 0.9rem;
-  font-weight: 700;
-  justify-content: space-between;
-  min-width: min(100%, 17rem);
-  padding: 0.75rem 0;
-}
-
-.contact-links a:hover {
-  border-color: #fff;
-}
-
-.contact-links span {
-  font-size: 1.1rem;
-}
-
 footer {
   background: #064e4b;
   color: #c7e9e6;
@@ -477,10 +438,6 @@ footer {
 
   .skills-grid {
     grid-template-columns: 1fr;
-  }
-
-  .contact h2 {
-    font-size: clamp(2rem, 9vw, 3rem);
   }
 
   footer {

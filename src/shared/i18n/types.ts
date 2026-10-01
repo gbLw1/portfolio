@@ -26,6 +26,10 @@ export type Copy = {
     intro: string
     areas: { label: string; text: string }[]
   }
-  contact: { eyebrow: string; title: string; accent: string; links: string[] }
+  contact: {
+    eyebrow: string
+    title: string
+    accent: string
+  }
   footer: string
 }

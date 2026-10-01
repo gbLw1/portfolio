@@ -2,6 +2,7 @@ import { profile } from '../../../shared/config/profile'
 import { useI18n } from '../../../shared/i18n'
 import { SectionHeading } from '../../../shared/ui/SectionHeading'
 import { BackToTop } from '../../../widgets/back-to-top/BackToTop'
+import { Contact } from '../../../widgets/contact/Contact'
 import { Education } from '../../../widgets/education/Education'
 import { Hero } from '../../../widgets/hero/Hero'
 import { Leadership } from '../../../widgets/leadership/Leadership'
@@ -13,7 +14,6 @@ import './home-page.css'
 
 export function HomePage() {
   const { copy } = useI18n()
-  const contacts = [`mailto:${profile.email}`, profile.linkedin, profile.github]
 
   return (
     <main className="portfolio">
@@ -61,26 +61,7 @@ export function HomePage() {
         <Education />
       </section>
 
-      <section className="contact section" id="contato">
-        <p className="eyebrow">{copy.contact.eyebrow}</p>
-        <h2>
-          {copy.contact.title}
-          {copy.contact.accent && <><br /><em>{copy.contact.accent}</em></>}
-        </h2>
-        <div className="contact-links">
-          {contacts.map((href, index) => (
-            <a
-              key={href}
-              href={href}
-              target={index ? '_blank' : undefined}
-              rel={index ? 'noreferrer' : undefined}
-            >
-              {index === 0 ? profile.email : copy.contact.links[index]}
-              <span>↗</span>
-            </a>
-          ))}
-        </div>
-      </section>
+      <Contact />
 
       <footer>
         <span>© {new Date().getFullYear()} {profile.name}</span>
