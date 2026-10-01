@@ -1,0 +1,69 @@
+.navigation {
+  align-items: center;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  height: 3.5rem;
+  justify-content: space-between;
+  padding: 0 clamp(1.25rem, 6vw, 6rem);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.brand {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+.navigation nav {
+  display: flex;
+  gap: clamp(0.8rem, 2vw, 1.8rem);
+}
+
+.navigation nav a {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navigation nav a:hover {
+  color: var(--ink);
+}
+
+.locale-switch {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.78rem;
+  gap: 0.3rem;
+}
+
+.locale-switch button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.35rem;
+}
+
+.locale-switch button[aria-pressed='true'] {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .navigation nav {
+    display: none;
+  }
+}

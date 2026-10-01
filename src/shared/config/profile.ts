@@ -1,0 +1,1 @@
+export const profile={name:'Gabriel Henrique Grassi',email:'gabrielhenrique2504@gmail.com',github:'https://github.com/gbLw1',linkedin:'https://www.linkedin.com/in/gblw1/',startedProfessionally:'05.10.2021'}

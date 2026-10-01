@@ -1,0 +1,26 @@
+.back-to-top {
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  bottom: 1.5rem;
+  box-shadow: 0 12px 28px rgba(8, 19, 27, 0.18);
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  font-size: 1.15rem;
+  font-weight: 800;
+  height: 2.8rem;
+  justify-content: center;
+  position: fixed;
+  right: 1.5rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  width: 2.8rem;
+  z-index: 15;
+}
+
+.back-to-top:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
