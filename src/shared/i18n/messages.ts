@@ -3,7 +3,7 @@ import type { Copy, Locale } from './types'
 export const messages: Record<Locale, Copy> = {
   'pt-BR': {
     meta: { title: 'Gabriel Henrique Grassi · Tech Lead', description: 'Tech Lead com experiência em arquitetura, .NET, React, Azure e liderança técnica.' },
-    nav: { about: 'Perfil', education: 'Formação', path: 'Experiência', skills: 'Competências', contact: 'Contato', linkedin: 'LinkedIn' },
+    nav: { home: 'Início', navigation: 'Navegação principal', language: 'Idioma', openMenu: 'Abrir menu', closeMenu: 'Fechar menu', about: 'Perfil', education: 'Formação', path: 'Experiência', skills: 'Competências', contact: 'Contato', linkedin: 'LinkedIn' },
     actions: { backToTop: 'Voltar ao topo' },
     hero: {
       availability: 'Tech Lead · Software Engineer', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 anos em tecnologia · profissional desde 2021',
@@ -45,7 +45,7 @@ export const messages: Record<Locale, Copy> = {
   },
   'en-US': {
     meta: { title: 'Gabriel Henrique Grassi · Tech Lead', description: 'Tech Lead with experience in architecture, .NET, React, Azure, and technical leadership.' },
-    nav: { about: 'Profile', education: 'Education', path: 'Experience', skills: 'Skills', contact: 'Contact', linkedin: 'LinkedIn' },
+    nav: { home: 'Home', navigation: 'Main navigation', language: 'Language', openMenu: 'Open menu', closeMenu: 'Close menu', about: 'Profile', education: 'Education', path: 'Experience', skills: 'Skills', contact: 'Contact', linkedin: 'LinkedIn' },
     actions: { backToTop: 'Back to top' },
     hero: {
       availability: 'Tech Lead · Software Engineer', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 years in technology · working professionally since 2021',

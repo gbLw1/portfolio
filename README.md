@@ -2,12 +2,16 @@
 
 Portfólio pessoal bilíngue (PT-BR e EN-US) de Gabriel Henrique Grassi, Tech Lead e engenheiro de software.
 
-## Tecnologias
+## Como foi desenvolvido
 
-- React + TypeScript + Vite
-- Arquitetura Feature-Sliced Design (FSD)
-- Catálogo i18n centralizado com preferência persistida no navegador
-- GitHub Pages via GitHub Actions
+- React, TypeScript e Vite para uma aplicação estática rápida e tipada.
+- Organização inspirada em Feature-Sliced Design (FSD), separando `app`, `pages`, `widgets` e `shared`.
+- Componentes coesos com estilos locais para navegação, hero, trajetória, competências, liderança e contato.
+- Layout responsivo com CSS Grid, tipografia fluida com `clamp()` e navegação adaptada para desktop e mobile.
+- Internacionalização PT-BR/EN-US centralizada, com preferência persistida no navegador e inglês como fallback inicial.
+- Metadados de SEO e compartilhamento (description, Open Graph e Twitter) atualizados conforme o idioma selecionado.
+- Sem bibliotecas de UI ou ícones externas: componentes visuais e SVGs são nativos do projeto.
+- Build e publicação automatizados no GitHub Pages via GitHub Actions.
 
 ## Desenvolvimento
 

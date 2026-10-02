@@ -2,7 +2,19 @@ export type Locale = 'pt-BR' | 'en-US'
 
 export type Copy = {
   meta: { title: string; description: string }
-  nav: { about: string; education: string; path: string; skills: string; contact: string; linkedin: string }
+  nav: {
+    home: string
+    navigation: string
+    language: string
+    openMenu: string
+    closeMenu: string
+    about: string
+    education: string
+    path: string
+    skills: string
+    contact: string
+    linkedin: string
+  }
   actions: { backToTop: string }
   hero: {
     availability: string
