@@ -7,7 +7,8 @@ export const messages: Record<Locale, Copy> = {
     actions: { backToTop: 'Voltar ao topo' },
     hero: {
       availability: 'Tech Lead · Software Engineer', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 anos em tecnologia · profissional desde 2021',
-      summary: 'Liderança técnica hands-on, arquitetura de software e produtos web com .NET, React, TypeScript e Azure.', cue: 'VER EXPERIÊNCIA'
+      summary: 'Liderança técnica hands-on, arquitetura de software e produtos web com .NET, React, TypeScript e Azure.',
+      downloadResume: 'Currículo (PDF)', downloadResumeAriaLabel: 'Baixar currículo em PDF', cue: 'VER EXPERIÊNCIA'
     },
     about: {
       eyebrow: 'Perfil profissional', title: 'Experiência técnica com foco em produto e pessoas.',
@@ -23,15 +24,16 @@ export const messages: Record<Locale, Copy> = {
     path: {
       eyebrow: 'Experiência profissional', title: 'Trajetória', description: 'Experiências em produtos SaaS, integrações e arquitetura de sistemas.',
       items: [
-        { period: '07.2025 — atual', company: 'Podtech', role: 'Tech Lead', text: 'Tech Lead responsável por um time de mais de 10 desenvolvedores, da conversa com o cliente à entrega. Traduz objetivos de negócio em escopo técnico, direciona prioridades e decisões de arquitetura, desenvolve o time por meio de mentoria, 1:1s e code review — sem abrir mão da atuação hands-on.' },
-        { period: '01.2025 — 07.2025', company: 'STi3 Sistemas', role: 'Backend Developer', text: 'Estruturou a comunicação assíncrona entre serviços e dispositivos, com rotinas recorrentes, reprocessamento e rastreabilidade de tarefas. Também apoiou um produto multi-tenant com múltiplas bases de dados e atualizações em massa.' },
-        { period: '10.2021 — 12.2024', company: 'OnFriday Technologies', role: 'Estagiário → Desenvolvedor Sênior', text: 'Evoluiu de estagiário a sênior entregando produtos que conectavam operação e cliente: notificações e chats em tempo real, plataforma de venda de ingressos, agendamento automatizado com IA, integrações de pagamento e dashboards white label internacionalizados.' }
+        { period: '07.2025 — atual', company: 'Podtech', role: 'Tech Lead', text: 'Lidera tecnicamente um time de 10+ desenvolvedores, conduzindo arquitetura, priorização e execução de projetos, do alinhamento com clientes à produção. Contribuiu para elevar a capacidade média de entrega de 2 para 4-5 funcionalidades por sprint por meio de mentoria no uso de IA. Traduz objetivos de negócio em escopo técnico e desenvolve o time com 1:1s e code review, mantendo atuação hands-on.' },
+        { period: '01.2025 — 07.2025', company: 'STi3 Sistemas', role: 'Backend Developer', text: 'Estruturou a comunicação assíncrona entre serviços e dispositivos, com rotinas recorrentes, reprocessamento e rastreabilidade de tarefas. Otimizou a performance de consultas e do processamento em massa em ambiente multi-tenant com múltiplas bases de dados.' },
+        { period: '10.2021 — 12.2024', company: 'OnFriday Technologies', role: 'Estagiário → Desenvolvedor Sênior', text: 'Evoluiu de estagiário a desenvolvedor sênior, iniciando no frontend e ampliando a atuação para backend, integrações e comunicação direta com clientes e stakeholders. Desenvolveu notificações e chats em tempo real para atendimento jurídico, levantou requisitos para uma plataforma de ingressos e implementou integrações de pagamento, agendamento com IA e dashboards white label para plataformas BaaS.' }
       ]
     },
     skills: { eyebrow: 'Competências', title: 'Principais áreas de atuação', groups: [
-      { label: 'Backend', items: ['.NET / C#', 'Node.js', 'SQL Server', 'PostgreSQL', 'REST APIs'] },
+      { label: 'Backend', items: ['.NET / C#', 'Node.js', 'SQL Server', 'PostgreSQL', 'REST APIs', 'Modelagem de dados', 'SaaS multi-tenant'] },
       { label: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'shadcn/ui', 'Tailwind CSS'] },
-      { label: 'Arquitetura & plataforma', items: ['Clean Architecture', 'FSD', 'Azure', 'Docker', 'Kubernetes', 'CI/CD · Jenkins'] },
+      { label: 'Arquitetura & plataforma', items: ['Clean Architecture', 'FSD', 'Microsserviços', 'Azure', 'Docker', 'Kubernetes', 'CI/CD · Jenkins', 'DevOps'] },
+      { label: 'Qualidade & produto', items: ['Testes automatizados', 'UX Analytics', 'CRO', 'Microsoft Clarity'] },
       { label: 'Liderança & IA', items: ['Mentoria', '1:1s', 'Code Review', 'AI-assisted engineering', 'Claude', 'Codex', 'MCP'] }
     ] },
     softSkills: { eyebrow: 'Pessoas e colaboração', title: 'Competências comportamentais', groups: [
@@ -49,7 +51,8 @@ export const messages: Record<Locale, Copy> = {
     actions: { backToTop: 'Back to top' },
     hero: {
       availability: 'Tech Lead · Software Engineer', title: 'Gabriel Henrique Grassi', accent: 'Tech Lead', tail: '6 years in technology · working professionally since 2021',
-      summary: 'Hands-on technical leadership, software architecture, and web products with .NET, React, TypeScript, and Azure.', cue: 'VIEW EXPERIENCE'
+      summary: 'Hands-on technical leadership, software architecture, and web products with .NET, React, TypeScript, and Azure.',
+      downloadResume: 'Resume (PDF)', downloadResumeAriaLabel: 'Download resume as PDF', cue: 'VIEW EXPERIENCE'
     },
     about: {
       eyebrow: 'Professional profile', title: 'Technical experience focused on product and people.',
@@ -65,15 +68,16 @@ export const messages: Record<Locale, Copy> = {
     path: {
       eyebrow: 'Professional experience', title: 'Career path', description: 'Experience in SaaS products, integrations, and software architecture.',
       items: [
-        { period: '07.2025 — present', company: 'Podtech', role: 'Tech Lead', text: 'Tech Lead responsible for a team of more than 10 developers, from customer conversations to delivery. Turns business goals into technical scope, guides priorities and architecture decisions, and develops the team through mentoring, 1:1s, and code review — while remaining hands-on.' },
-        { period: '01.2025 — 07.2025', company: 'STi3 Sistemas', role: 'Backend Developer', text: 'Structured asynchronous communication between services and devices, with recurring routines, task reprocessing, and traceability. Also supported a multi-tenant product with multiple databases and bulk updates.' },
-        { period: '10.2021 — 12.2024', company: 'OnFriday Technologies', role: 'Intern → Senior Developer', text: 'Progressed from intern to senior developer while delivering products that connected operations and customers: real-time notifications and chat, a ticketing platform, AI-powered appointment scheduling, payment integrations, and internationalized white-label dashboards.' }
+        { period: '07.2025 — present', company: 'Podtech', role: 'Tech Lead', text: 'Provides technical leadership to a team of 10+ developers, guiding architecture, prioritization, and project execution from client alignment through production. Helped increase average delivery capacity from 2 to 4-5 features per sprint through mentorship on using AI as a development support tool. Translates business goals into technical scope and develops the team through 1:1s and code reviews while remaining hands-on.' },
+        { period: '01.2025 — 07.2025', company: 'STi3 Sistemas', role: 'Backend Developer', text: 'Designed asynchronous communication between services and devices, including recurring jobs, task reprocessing, and traceability. Optimized database query performance and bulk processing in a multi-tenant environment with multiple databases.' },
+        { period: '10.2021 — 12.2024', company: 'OnFriday Technologies', role: 'Intern → Senior Developer', text: 'Progressed from intern to senior developer, beginning in frontend development and expanding into backend, integrations, and direct communication with clients and stakeholders. Built real-time notifications and chat for a legal services platform, gathered requirements for a ticketing platform, and implemented payment integrations, AI-powered scheduling, and internationalized white-label dashboards for BaaS platforms.' }
       ]
     },
     skills: { eyebrow: 'Skills', title: 'Primary areas of expertise', groups: [
-      { label: 'Backend', items: ['.NET / C#', 'Node.js', 'SQL Server', 'PostgreSQL', 'REST APIs'] },
+      { label: 'Backend', items: ['.NET / C#', 'Node.js', 'SQL Server', 'PostgreSQL', 'REST APIs', 'Data modeling', 'Multi-tenant SaaS'] },
       { label: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'shadcn/ui', 'Tailwind CSS'] },
-      { label: 'Architecture & platform', items: ['Clean Architecture', 'FSD', 'Azure', 'Docker', 'Kubernetes', 'CI/CD · Jenkins'] },
+      { label: 'Architecture & platform', items: ['Clean Architecture', 'FSD', 'Microservices', 'Azure', 'Docker', 'Kubernetes', 'CI/CD · Jenkins', 'DevOps'] },
+      { label: 'Quality & product', items: ['Automated testing', 'UX analytics', 'CRO', 'Microsoft Clarity'] },
       { label: 'Leadership & AI', items: ['Mentoring', '1:1s', 'Code Review', 'AI-assisted engineering', 'Claude', 'Codex', 'MCP'] }
     ] },
     softSkills: { eyebrow: 'People & collaboration', title: 'Behavioral strengths', groups: [

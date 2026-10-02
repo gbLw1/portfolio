@@ -22,6 +22,8 @@ export type Copy = {
     accent: string
     tail: string
     summary: string
+    downloadResume: string
+    downloadResumeAriaLabel: string
     cue: string
   }
   about: { eyebrow: string; title: string; lead: string; paragraphs: string[]; impact: { value: string; label: string }[] }
