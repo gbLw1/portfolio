@@ -1,11 +1,12 @@
 .back-to-top {
   align-items: center;
-  background: var(--paper);
-  border: 1px solid var(--line-strong);
+  animation: back-to-top-enter 180ms ease-out both;
+  background: var(--accent);
+  border: 1px solid var(--accent);
   border-radius: 50%;
   bottom: 1.5rem;
-  box-shadow: 0 12px 28px rgba(8, 19, 27, 0.18);
-  color: var(--accent);
+  box-shadow: 0 10px 24px rgba(8, 127, 122, 0.32);
+  color: #fff;
   cursor: pointer;
   display: flex;
   font-size: 1.15rem;
@@ -20,7 +21,25 @@
 }
 
 .back-to-top:hover {
-  background: var(--accent);
-  color: #fff;
-  transform: translateY(-2px);
+  background: #064e4b;
+  border-color: #064e4b;
+  transform: translateY(-3px);
+}
+
+@keyframes back-to-top-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    animation: none;
+  }
 }

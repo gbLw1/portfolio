@@ -101,55 +101,55 @@
 }
 
 .hero-actions {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
   margin-top: 1.75rem;
 }
 
-.resume-download {
-  align-items: center;
-  border: 1px solid #7ce3db;
-  color: #7ce3db;
-  display: inline-flex;
-  font-size: 0.75rem;
-  font-weight: 800;
-  gap: 0.55rem;
-  letter-spacing: 0.06em;
-  padding: 0.7rem 0.85rem;
-  transition: background-color 160ms ease, color 160ms ease;
-}
-
-.resume-download:hover {
-  background: #7ce3db;
-  color: var(--ink);
-}
-
-.resume-download svg {
-  fill: none;
-  height: 1rem;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
-  width: 1rem;
-}
-
+.resume-download,
 .scroll-cue {
+  align-items: center;
   border-bottom: 1px solid #7ce3db;
   color: #7ce3db;
   display: inline-flex;
   font-size: 0.75rem;
   font-weight: 800;
-  gap: 0.7rem;
   letter-spacing: 0.08em;
+  line-height: 1;
   margin-top: 0;
   padding-bottom: 0.45rem;
+  text-transform: uppercase;
 }
 
-.scroll-cue span {
-  font-size: 1rem;
+.resume-download {
+  align-items: center;
+  gap: 0.55rem;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.resume-download:hover,
+.scroll-cue:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.resume-download svg,
+.scroll-cue svg {
+  fill: none;
+  height: 0.9rem;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 0.9rem;
+}
+
+.scroll-cue {
+  border-color: #b6c5c9;
+  color: #b6c5c9;
+  gap: 0.7rem;
 }
 
 .education-list,

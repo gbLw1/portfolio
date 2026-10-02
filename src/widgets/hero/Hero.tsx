@@ -26,7 +26,10 @@ export function Hero() {
             {copy.hero.downloadResume}
           </a>
           <a href="#trajetoria" className="scroll-cue">
-            {copy.hero.cue}<span>↓</span>
+            {copy.hero.cue}
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 3v11m0 0 4-4m-4 4-4-4" />
+            </svg>
           </a>
         </div>
       </div>

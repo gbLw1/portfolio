@@ -17,9 +17,9 @@ export const messages: Record<Locale, Copy> = {
       impact: [{ value: '10+', label: 'desenvolvedores em liderança técnica' }, { value: '~40', label: 'clientes atendidos por produto SaaS multi-tenant' }]
     },
     education: { eyebrow: 'Formação e certificação', title: 'Base técnica', credentialLabel: 'Ver credencial', items: [
-      { period: '2020 — 2021', institution: 'ETEC Jahu', title: 'Técnico em Desenvolvimento de Sistemas', description: 'Início da formação técnica e dos primeiros projetos de software.' },
+      { period: '2023', institution: 'Microsoft', title: 'Microsoft Certified: Azure Fundamentals (AZ-900)', description: 'Certificação em fundamentos de serviços em nuvem Azure.', credentialUrl: 'https://www.credly.com/badges/99784108-8d97-4665-8639-d1b6d3ac797e' },
       { period: '2021 — 2023', institution: 'FATEC Jahu', title: 'Sistemas para Internet', description: 'Formação superior. TCC: sistema de gestão financeira com .NET/C#, Blazor e REST API.' },
-      { period: '2023', institution: 'Microsoft', title: 'Microsoft Certified: Azure Fundamentals (AZ-900)', description: 'Certificação em fundamentos de serviços em nuvem Azure.', credentialUrl: 'https://www.credly.com/badges/99784108-8d97-4665-8639-d1b6d3ac797e' }
+      { period: '2020 — 2021', institution: 'ETEC Jahu', title: 'Técnico em Desenvolvimento de Sistemas', description: 'Início da formação técnica e dos primeiros projetos de software.' }
     ] },
     path: {
       eyebrow: 'Experiência profissional', title: 'Trajetória', description: 'Experiências em produtos SaaS, integrações e arquitetura de sistemas.',
@@ -61,9 +61,9 @@ export const messages: Record<Locale, Copy> = {
       impact: [{ value: '10+', label: 'developers under technical leadership' }, { value: '~40', label: 'clients served through a multi-tenant SaaS product' }]
     },
     education: { eyebrow: 'Education & certification', title: 'Technical foundation', credentialLabel: 'View credential', items: [
-      { period: '2020 — 2021', institution: 'ETEC Jahu', title: 'Technical Degree in Systems Development', description: 'Beginning of technical education and first software projects.' },
+      { period: '2023', institution: 'Microsoft', title: 'Microsoft Certified: Azure Fundamentals (AZ-900)', description: 'Certification in Azure cloud services fundamentals.', credentialUrl: 'https://www.credly.com/badges/99784108-8d97-4665-8639-d1b6d3ac797e' },
       { period: '2021 — 2023', institution: 'FATEC Jahu', title: 'Internet Systems', description: 'Higher education. Capstone project: a financial management system with .NET/C#, Blazor, and REST API.' },
-      { period: '2023', institution: 'Microsoft', title: 'Microsoft Certified: Azure Fundamentals (AZ-900)', description: 'Certification in Azure cloud services fundamentals.', credentialUrl: 'https://www.credly.com/badges/99784108-8d97-4665-8639-d1b6d3ac797e' }
+      { period: '2020 — 2021', institution: 'ETEC Jahu', title: 'Technical Degree in Systems Development', description: 'Beginning of technical education and first software projects.' }
     ] },
     path: {
       eyebrow: 'Professional experience', title: 'Career path', description: 'Experience in SaaS products, integrations, and software architecture.',
