@@ -22,9 +22,9 @@ export function Navigation() {
       </nav>
       <div className="navigation-actions">
         <div className="locale-switch" aria-label={copy.nav.language}>
-          <button aria-pressed={locale === 'pt-BR'} onClick={() => setLocale('pt-BR')}>PT</button>
+          <button aria-pressed={locale === 'pt-BR'} onClick={() => setLocale('pt-BR')}>PT-BR</button>
           <span>/</span>
-          <button aria-pressed={locale === 'en-US'} onClick={() => setLocale('en-US')}>EN</button>
+          <button aria-pressed={locale === 'en-US'} onClick={() => setLocale('en-US')}>EN-US</button>
         </div>
         <button
           type="button"
