@@ -1,4 +1,5 @@
 import { profile } from '../../../shared/config/profile'
+import { getSectionIds } from '../../../shared/config/sections'
 import { useI18n } from '../../../shared/i18n'
 import { SectionHeading } from '../../../shared/ui/SectionHeading'
 import { BackToTop } from '../../../widgets/back-to-top/BackToTop'
@@ -13,14 +14,15 @@ import { Timeline } from '../../../widgets/timeline/Timeline'
 import './home-page.css'
 
 export function HomePage() {
-  const { copy } = useI18n()
+  const { copy, locale } = useI18n()
+  const sectionIds = getSectionIds(locale)
 
   return (
     <main className="portfolio">
       <Navigation />
       <Hero />
 
-      <section className="about section" id="sobre">
+      <section className="about section" id={sectionIds.about}>
         <SectionHeading eyebrow={copy.about.eyebrow} title={copy.about.title} />
         <div className="about-copy">
           <p className="lead">{copy.about.lead}</p>
@@ -36,7 +38,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="section trajectory" id="trajetoria">
+      <section className="section trajectory" id={sectionIds.experience}>
         <SectionHeading
           eyebrow={copy.path.eyebrow}
           title={copy.path.title}
@@ -45,7 +47,7 @@ export function HomePage() {
         <Timeline />
       </section>
 
-      <section className="section competencies" id="competencias">
+      <section className="section competencies" id={sectionIds.skills}>
         <SectionHeading eyebrow={copy.skills.eyebrow} title={copy.skills.title} />
         <SkillsGrid />
       </section>
@@ -55,7 +57,7 @@ export function HomePage() {
         <SoftSkills />
       </section>
 
-      <section className="education section" id="formacao">
+      <section className="education section" id={sectionIds.education}>
         <SectionHeading eyebrow={copy.education.eyebrow} title={copy.education.title} />
         <Education />
       </section>

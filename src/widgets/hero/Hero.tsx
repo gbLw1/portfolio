@@ -1,4 +1,5 @@
 import { useI18n } from '../../shared/i18n'
+import { getSectionIds } from '../../shared/config/sections'
 import './hero.css'
 
 export function Hero() {
@@ -7,9 +8,10 @@ export function Hero() {
     ? 'gabriel-henrique-grassi-curriculo.pdf'
     : 'gabriel-henrique-grassi-resume-en-us.pdf'
   const resumeUrl = `${import.meta.env.BASE_URL}curriculo/${resumeFilename}`
+  const sectionIds = getSectionIds(locale)
 
   return (
-    <section className="hero" id="inicio">
+    <section className="hero" id={sectionIds.home}>
       <div className="hero-main">
         <p className="hero-kicker">{copy.hero.availability}</p>
         <h1>
@@ -25,7 +27,7 @@ export function Hero() {
             </svg>
             {copy.hero.downloadResume}
           </a>
-          <a href="#trajetoria" className="scroll-cue">
+          <a href={`#${sectionIds.experience}`} className="scroll-cue">
             {copy.hero.cue}
             <svg aria-hidden="true" viewBox="0 0 24 24">
               <path d="M12 3v11m0 0 4-4m-4 4-4-4" />

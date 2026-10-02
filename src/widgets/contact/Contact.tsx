@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { profile } from '../../shared/config/profile'
+import { getSectionIds } from '../../shared/config/sections'
 import { useI18n } from '../../shared/i18n'
 import './contact.css'
 
@@ -11,7 +12,8 @@ type ContactItem = {
 }
 
 export function Contact() {
-  const { copy } = useI18n()
+  const { copy, locale } = useI18n()
+  const sectionIds = getSectionIds(locale)
   const contacts: ContactItem[] = [
     { label: profile.email, href: `mailto:${profile.email}`, icon: <EmailIcon /> },
     { label: 'LinkedIn', href: profile.linkedin, external: true, icon: <LinkedInIcon /> },
@@ -19,7 +21,7 @@ export function Contact() {
   ]
 
   return (
-    <section className="contact section" id="contato">
+    <section className="contact section" id={sectionIds.contact}>
       <p className="eyebrow">{copy.contact.eyebrow}</p>
       <h2>
         {copy.contact.title}

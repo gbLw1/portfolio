@@ -28,7 +28,7 @@ export type Copy = {
   }
   about: { eyebrow: string; title: string; lead: string; paragraphs: string[]; impact: { value: string; label: string }[] }
   education: { eyebrow: string; title: string; credentialLabel: string; items: { period: string; institution: string; title: string; description: string; credentialUrl?: string }[] }
-  path: { eyebrow: string; title: string; description: string; items: { period: string; company: string; role: string; text: string }[] }
+  path: { eyebrow: string; title: string; description: string; caseStudyLabel: string; contextLabel: string; approachLabel: string; impactLabel: string; items: { period: string; company: string; role: string; text: string; caseStudies: { title: string; context: string; approach: string; impact: string }[] }[] }
   skills: { eyebrow: string; title: string; groups: { label: string; items: string[] }[] }
   softSkills: { eyebrow: string; title: string; groups: { label: string; items: string[] }[] }
   leadership: {
